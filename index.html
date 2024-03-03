@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hooking.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <div class="titulo-cabecalho">
+                <h1>Hooking.com</h1>
+                <img src="lib/imgs/aviao.png" alt="">
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link active" href="#inicio">
+                                INICIO
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#ofertas">
+                                OFERTAS
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#destaques">
+                                DESTAQUES
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a class="nav-link" href="#contato">
+                                CONTATO
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner" id="inicio">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="lib/imgs/rio-1991056_1280.jpg" alt="Foto interna restaurante">
+                    <div class="carousel-caption">
+                        <h2>Rio de Janeiro</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="lib/imgs/canal-6519196.jpg" alt="Duas taças">
+                    <div class="carousel-caption">
+                        <h2>Veneza</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="lib/imgs/burj-khalifa-4922317_1280.jpg" alt="Mesa refeição">
+                    <div class="carousel-caption">
+                        <h2>Dubai</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"> </button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"> </button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"> </button>
+            </div>
+        </div>
+        <section id="ofertas">
+            <div class="sub-titulo">
+                <h2>Encontre sua próxima estadia</h2>
+                <p>Encontre ofertas em hotéis, casas, apartamentos e muito mais...</p>
+            </div>
+            <div class="container">
+                <div class="row linha-grid">
+                    <div class="col col-sm coluna-grid">
+                        <img src="lib/imgs/rio-de-janeiro-809755_1920.jpg"  alt="">
+                            <h3>Rio de Janeiro</h3>
+                            <p>
+                                O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor.
+                            </p>
+                            
+                        <div class="price">
+                            <del>R$ 3.300,00</del>
+                            <strong>R$1.800,00</strong>
+                        </div>
+                        <button type="button" class="btn btn-primary">Tenho interesse</button>
+                    </div>
+                    <div class="col col-sm coluna-grid">
+                        <img src="lib/imgs/eiffel-tower-3349075_1280.jpg"  alt="">
+                        <h3>Paris</h3>
+                        <p>
+                            Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura.
+                        </p>
+                        <div class="price">
+                            <del>R$ 8.000,00</del>
+                            <strong>R$3.500,00</strong>
+                        </div>
+                        <button type="button" class="btn btn-primary">Tenho interesse</button>
+                    </div>
+                    <div class="col col-sm coluna-grid">
+                        <img src="lib/imgs/mykonos-2061984_1280.jpg"  alt="">
+                        <h3>Mykonos</h3>
+                        <p>
+                            Mykonos é uma ilha do arquipélago Cíclades no Mar Ageu. Ela é popularmente conhecida pela sua atmosfera festiva no verão.
+                        </p>
+                        <div class="price">
+                            <del>R$ 12.000,00</del>
+                            <strong>R$6.500,00</strong>
+                        </div>
+                        <button type="button" class="btn btn-primary">Tenho interesse</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="destaques">
+            <div class="container">
+                <div class="sub-titulo">
+                    <h1>Destinos mais procurados</h1>
+                    <p>Opções mais procuradas por viajantes do Brasil</p>
+                </div>
+                <div class="row card-row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://media.istockphoto.com/id/1166728645/pt/foto/suspension-bridge-cable-stayed-bridge-in-the-world.jpg?s=2048x2048&w=is&k=20&c=0YdqOY5JbhdXZUegXT1HzojewNxnlBW-js-Ui4nkou4=" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Sao Paulo</h5>
+                                <p class="card-text">São Paulo, centro financeiro do Brasil, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica.</p>
+                                <a href="#" class="btn btn-primary">Veja Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="lib/imgs/rio-de-janeiro-809755_1920.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Rio de Janeiro</h5>
+                                <p class="card-text">O Rio de Janeiro é uma grande cidade brasileira à beira-mar, famosa pelas praias de Copacabana e Ipanema, pela estátua de 38 metros de altura do Cristo Redentor</p>
+                                <a href="#" class="btn btn-primary">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2017/06/11/16/15/lisbon-2392754_1280.jpg" alt="Imagem de capa do card">
+                            <div class="card-body">
+                                <h5 class="card-title">Lisboa</h5>
+                                <p class="card-text">Lisboa é a capital de Portugal, situada na costa. Do imponente Castelo de São Jorge, a vista abrange as construções em tons pastel da cidade antiga.</p>
+                                <a href="#" class="btn btn-primary">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
